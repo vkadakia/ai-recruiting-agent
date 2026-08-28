@@ -1,0 +1,21 @@
+Jane Doe
+jane.doe@example.com
+
+EDUCATION
+Carnegie Mellon University
+B.S. Computer Science, Expected May 2028
+
+EXPERIENCE
+Software Engineering Intern, Acme Software
+- Built Python FastAPI services used by an internal analytics application.
+- Deployed backend services to AWS and added automated tests.
+- Collaborated with four engineers through pull requests and code reviews.
+
+PROJECTS
+Campus Marketplace
+- Built a React web application with a Java backend and PostgreSQL.
+- Implemented REST APIs for listings, search, and user accounts.
+
+SKILLS
+Python, Java, JavaScript, React, FastAPI, PostgreSQL, AWS
+Data structures and algorithms
