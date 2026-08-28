@@ -1,0 +1,21 @@
+Software Engineering Intern
+
+We are looking for a Software Engineering Intern to join our product engineering team.
+
+Responsibilities:
+- Build and test software features used by customers.
+- Work with engineers to design reliable backend services and user-facing experiences.
+- Write clean, maintainable code and participate in code reviews.
+- Debug issues and improve application performance.
+
+Required qualifications:
+- Currently pursuing a bachelor's degree in Computer Science, Software Engineering, or a related technical field.
+- Strong programming fundamentals and knowledge of data structures and algorithms.
+- Experience programming in Python, Java, C++, or a similar general-purpose language.
+- Ability to work collaboratively on a technical team.
+
+Preferred qualifications:
+- Prior software engineering internship or substantial project experience.
+- Experience with cloud platforms such as AWS, Azure, or Google Cloud.
+- Experience building web applications or APIs.
+- Familiarity with containers or Kubernetes.
