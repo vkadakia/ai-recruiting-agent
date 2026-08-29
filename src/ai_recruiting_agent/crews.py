@@ -6,7 +6,7 @@ from .schemas import CandidateEvaluation, CandidateProfile, JobRubric
 
 def build_job_rubric(job_description: str) -> JobRubric:
     orchestrator = orchestrator_agent()
-    analyst = job_analysis_agent()
+    job_analyst = job_analysis_agent()
 
     framing_task = Task(
         description=f"""Review this job description as the recruiting orchestrator. Prepare a concise brief identifying the role, explicit requirements, preferences, and ambiguities. Do not score candidates.\n\nJOB DESCRIPTION\n{job_description}""",
@@ -17,13 +17,13 @@ def build_job_rubric(job_description: str) -> JobRubric:
     rubric_task = Task(
         description=f"""Create a structured hiring rubric from the job description. Only include supported criteria; keep required and preferred criteria separate; do not invent requirements; preserve ambiguity in notes.\n\nJOB DESCRIPTION\n{job_description}""",
         expected_output="A structured JobRubric object.",
-        agent=analyst,
+        agent=job_analyst,
         context=[framing_task],
         output_pydantic=JobRubric,
     )
 
     result = Crew(
-        agents=[orchestrator, analyst],
+        agents=[orchestrator, job_analyst],
         tasks=[framing_task, rubric_task],
         process=Process.sequential,
         verbose=True,
