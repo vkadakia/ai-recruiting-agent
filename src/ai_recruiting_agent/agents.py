@@ -3,7 +3,7 @@ from crewai import Agent, LLM
 
 
 def _llm() -> LLM:
-    return LLM(model=os.getenv("MODEL", "openai/gpt-4o-mini"), temperature=0)
+    return LLM(model=os.getenv("MODEL", "openai/gpt-5.6-luna"), temperature=0)
 
 
 def orchestrator_agent() -> Agent:
